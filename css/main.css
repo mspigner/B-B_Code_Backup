@@ -3,7 +3,25 @@
   ========================================================================== */
 * {
   box-sizing: border-box;
-  font-size: 16px
+
+}
+
+@media only screen and (max-width: 1050px) {
+  html {
+      font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  html {
+    font-size: 12px
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  html {
+    font-size: 12px
+  }
 }
 
 .clearfix:after {
@@ -28,11 +46,23 @@
   background-size: 100%;
   position: relative;
   height: 780px;
+  background-repeat: no-repeat;
 }
 .header_copy {
   width: 100%;
   position: absolute;
   top: 30%;
+  left:1%;
+}
+.header_mobile {
+  visibility: hidden;
+  display: none;
+}
+.hr_mobile {
+  visibility: hidden;
+  display: none;
+  width: 100%;
+  border-bottom: 2px solid #8b0837;
 }
 
 .header_copy h1 {
@@ -40,7 +70,7 @@
   text-align: center;
 }
 
-.header_copy h2 {
+.header_copy h2, .header_mobile h2 {
   font-family: 'Maiden Orange', cursive;
   font-size: 4.2rem;
   margin: 2% 70% 0 0;
@@ -77,14 +107,15 @@
 
 }
 
-/*.header_line {
-  position: absolute;
+.header_line {
   top: 72%;
   width: 100%;
   height: 2px;
-  border-bottom: 10px solid white;
+  border-bottom: 4px solid #8b0837;
+  visibility: hidden;
+  display: none;
 
-}*/
+}
 
 
 /* Headings
@@ -96,7 +127,7 @@
 
 .intro_img {
   width: 64%;
-  height: 300px;
+/*  height: 300px;*/
   margin: 4% auto;
 }
 
@@ -233,9 +264,16 @@
 }
 
 
+
 /* Footer
    ================================================================ */
-
+.mobile_message {
+  margin: 800px 25% 0% 25%;
+  width: 50%;
+  position: absolute;
+  overflow:hidden;
+  top: 320%;
+}
 
 
 /* Navigation
@@ -243,5 +281,116 @@
 
 
 
-/* Buttons
+/* Mobile Optimization
    ================================================================ */
+
+@media only screen and (max-width: 1020px) {
+  .header {
+    height: 630px;
+  }
+  * {
+    font-size: 10px;
+  }
+}
+
+
+@media only screen and (max-width: 870px) {
+  .header {
+    height: 560px;
+  }
+  .video {
+    width: 80%;
+    margin: 580px 10% 0% 10%;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .header {
+    height: 520px;
+  }
+  .header_copy {
+    left: 2%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .header {
+    height: 400px;
+  }
+/*  * {
+    font-size: 14px;
+  }*/
+  .bio {
+    float: none;
+    width: 90%;
+  }
+  .intro_teen {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  .intro_carl {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+.header_copy {
+  display: none;
+  visibility: hidden;
+}
+.header_mobile {
+  visibility: visible;
+  display: block;
+  text-align: center;
+  margin: 2rem auto 10rem auto;
+
+}
+.header_mobile h2 {
+  text-align: center;
+  margin: 2% auto;
+}
+.articles {
+  font-size: 1rem;
+}
+.header_line {
+  visibility: visible;
+  display: block;
+}
+
+}
+
+@media only screen and (max-width: 750px) {
+ .header_copy {
+  top: 25%;
+
+ }
+}
+@media only screen and (max-width: 620px) {
+ .header {
+  height: 380px;
+ }
+  
+ .header_mobile {
+
+ }
+
+}
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 530px) {
+
+ .header {
+  height: 250px;
+ }
+
+
+ .story h1 {
+  margin: 5rem auto 2rem auto;
+ }
+
+}
+
+
+
