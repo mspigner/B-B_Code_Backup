@@ -34,9 +34,42 @@
    Author's custom styles
   ========================================================================== */
 
-/* Global
+/* Navigation
    ================================================================ */
-
+.nav {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  background-color: rgba(184,185,148,0.6);
+  width: 100%;
+  height: 70px;
+  visibility: hidden;
+  display: none;
+}
+.nav ul {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.nav li {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 1rem;
+  color: white;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 20%;
+  margin: 0.5% auto;
+  text-align: center;
+  height: 93px;
+  -webkit-transition: all 400ms ease;
+  -o-transition: all 400ms ease;
+  transition: all 400ms ease;
+}
+.scrolled {
+  visibility: visible;
+  display: block;
+}
 
 
 /* Header
